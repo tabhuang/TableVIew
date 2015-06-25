@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		E5D1AF7E1B38582100418BB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D1AF7D1B38582100418BB9 /* AppDelegate.swift */; };
-		E5D1AF801B38582100418BB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D1AF7F1B38582100418BB9 /* ViewController.swift */; };
-		E5D1AF831B38582100418BB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5D1AF811B38582100418BB9 /* Main.storyboard */; };
 		E5D1AF851B38582100418BB9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5D1AF841B38582100418BB9 /* Images.xcassets */; };
-		E5D1AF881B38582100418BB9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D1AF861B38582100418BB9 /* LaunchScreen.xib */; };
 		E5D1AF941B38582100418BB9 /* TableVIewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D1AF931B38582100418BB9 /* TableVIewTests.swift */; };
+		E5D1AF9E1B38587400418BB9 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5D1AF9D1B38587400418BB9 /* Storyboard.storyboard */; };
+		E5D1AFA01B385DEC00418BB9 /* MasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D1AF9F1B385DEC00418BB9 /* MasterTableViewController.swift */; };
+		E5D1AFA21B385E4200418BB9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D1AFA11B385E4200418BB9 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +29,13 @@
 		E5D1AF781B38582100418BB9 /* TableVIew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableVIew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5D1AF7C1B38582100418BB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5D1AF7D1B38582100418BB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E5D1AF7F1B38582100418BB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E5D1AF821B38582100418BB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E5D1AF841B38582100418BB9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		E5D1AF871B38582100418BB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E5D1AF8D1B38582100418BB9 /* TableVIewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableVIewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5D1AF921B38582100418BB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5D1AF931B38582100418BB9 /* TableVIewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableVIewTests.swift; sourceTree = "<group>"; };
+		E5D1AF9D1B38587400418BB9 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		E5D1AF9F1B385DEC00418BB9 /* MasterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterTableViewController.swift; sourceTree = "<group>"; };
+		E5D1AFA11B385E4200418BB9 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +78,11 @@
 			isa = PBXGroup;
 			children = (
 				E5D1AF7D1B38582100418BB9 /* AppDelegate.swift */,
-				E5D1AF7F1B38582100418BB9 /* ViewController.swift */,
-				E5D1AF811B38582100418BB9 /* Main.storyboard */,
 				E5D1AF841B38582100418BB9 /* Images.xcassets */,
-				E5D1AF861B38582100418BB9 /* LaunchScreen.xib */,
 				E5D1AF7B1B38582100418BB9 /* Supporting Files */,
+				E5D1AF9D1B38587400418BB9 /* Storyboard.storyboard */,
+				E5D1AFA11B385E4200418BB9 /* DetailViewController.swift */,
+				E5D1AF9F1B385DEC00418BB9 /* MasterTableViewController.swift */,
 			);
 			path = TableVIew;
 			sourceTree = "<group>";
@@ -192,9 +192,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5D1AF831B38582100418BB9 /* Main.storyboard in Resources */,
-				E5D1AF881B38582100418BB9 /* LaunchScreen.xib in Resources */,
 				E5D1AF851B38582100418BB9 /* Images.xcassets in Resources */,
+				E5D1AF9E1B38587400418BB9 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +211,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5D1AF801B38582100418BB9 /* ViewController.swift in Sources */,
+				E5D1AFA21B385E4200418BB9 /* DetailViewController.swift in Sources */,
 				E5D1AF7E1B38582100418BB9 /* AppDelegate.swift in Sources */,
+				E5D1AFA01B385DEC00418BB9 /* MasterTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,25 +234,6 @@
 			targetProxy = E5D1AF8E1B38582100418BB9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		E5D1AF811B38582100418BB9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E5D1AF821B38582100418BB9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E5D1AF861B38582100418BB9 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E5D1AF871B38582100418BB9 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E5D1AF951B38582100418BB9 /* Debug */ = {
